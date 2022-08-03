@@ -1,6 +1,6 @@
  @font-face {
     font-family: Music;
-    src: url("Hodor.ttf");
+    src: url("DMSerifDisplay-Regular.ttf");
  }
  
  body {
@@ -9,7 +9,7 @@
     
  }
  .nonhero {
-    background: linear-gradient(rgb(255, 255, 255),rgba(240, 204, 192, 0.943),rgba(222, 192, 248, 0.87));
+    background: linear-gradient(rgb(255, 255, 255),rgba(240, 204, 192, 0.943),rgba(144, 224, 233, 0.719));
  }
  
  #frontext {
@@ -28,7 +28,7 @@
     right: 6px;
     position: absolute;
  }
- #Fname {
+#Fname {
     font-size: 30px;
     letter-spacing: 2px;
     margin-top: 40px;
@@ -38,22 +38,21 @@
 
 }
  #intro { 
-       align-items: center;
-    background-image: url("media/giphy.webp");
+    background-image: url("media/watermellon.gif");
     padding: 150px;
-     background-size: cover;
+     justify-content: center;
+     background-position: center;
+     background-repeat: no-repeat;
      margin: 0px;
+     margin-bottom: -30px;
+     background-color: rgb(223, 220, 219);
 }
 .Sintro {
-    display: flex;
-    margin-top: 35px;
-    margin-right: -40px;
-    padding-right: -10px;
-    padding-top: 30px;
     font-size: 25px;
-    justify-content: end;
+    align-items: center;
     font-weight: bold;
     text-shadow: 0px 0px 5px white;
+    line-height: 1.6;
     
 
 }
@@ -77,32 +76,59 @@
     font-size: 25px;
     padding: 60px;
     align-content: center;
+    color: white;
+
+}
+.paragraph2 {
+    text-align: center;
+    font-size: 25px;
+    padding: 20px , 0px;
+    align-content: center;
+    color: rgb(43, 40, 40);
+    align-content: center;
+     
 
 }
 .background {
-    background-image: url("media/color.gif");
+    background-image: url("media/pexels-fwstudio-131683.jpg");
     background-size: cover;
+    margin-top: 0px;
+
 }
 .hMyself {
+    padding-top: 30px;
      text-align: center;
     font-family: music;
     letter-spacing: 5px;
     margin-bottom: 0px;
+    color: white;
+}
+.heading { padding-top: 30px;
+          padding-bottom: 30px;
+    text-align: center;
+   font-family: music;
+   letter-spacing: 5px;
+   margin-bottom: 0px;
+
 }
  .skillset{
     display: flex;
     justify-content: space-around;
+    padding: 20px , 0px;
  }
 
 .iimg {
     
-   width: 130px;
+   width: 100px;
+   height: 100px;
     margin-top: 50px;
 }
 .project {
+    margin: -10px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
 }
 .cimg {
     
@@ -113,10 +139,13 @@
  }
  
 .hobbies {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
     font-family: music;
     letter-spacing: 3px;
-    margin-bottom: -0px;
+    margin-bottom: 0px;
+    margin-top: 20px;
     font-size: 30px;
 
 }
@@ -189,13 +218,14 @@
     display: flex;
     justify-content: space-between;
     align-items: end;
-    margin-top: -10px;
-    background-image: url("media/gify3.gif");
-    background-size: contain;
-    color: aliceblue;
+    padding-top: 0px;
+    background-image: url("media/pexels-zaksheuskaya-1568607.jpg");
+    background-size: cover;
+    color: rgb(0, 0, 0);
 }
 .footerlogo {
     width: 250px;
-    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
     padding: -20px ;
 }
