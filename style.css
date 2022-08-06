@@ -18,11 +18,11 @@
  
  #frontext {
      font-size: 2rem;
-     letter-spacing: 2px;
-     font-size: 60px;
+     letter-spacing: 0.2em;
+     font-size: 3rem;
      font-family: Music;
      text-shadow: 1px 1px 20px white;
-     margin-left: -40px;
+     
 
 
  }
@@ -62,9 +62,13 @@ a:hover{
 
  #intro { 
     display: flex;
-    justify-content: space-around;
-    background-color: rgb(223, 220, 219);
-    margin-bottom: -1em;
+    justify-content: space-between;
+   
+    
+}
+.background1 {
+     background-color: rgb(223, 220, 219);
+     margin-bottom: -1em;
 }
 .greet {
     font-weight: 800;
@@ -75,41 +79,40 @@ a:hover{
     font-size: 4rem;
     letter-spacing: 0.25;
 
-    text-shadow: 1px 1px 20px  white;
+    /* text-shadow: 1px 1px 20px  white; */
 }
 .Sintro {
     font-size: 1.4rem;
-     text-align: center;
     font-weight: bold;
-    text-shadow: 0px 0px 5px white;
+   /* border: 1px solid beige; */
+    /* txt-shadow: 0px 0px 5px white; */
     line-height: 1.6;
-    
-    
-
+    padding-left: 5em;
+    padding: 1em 0em 1em 5em;
+}
+.watermelon {
+    padding: 0em;
+     width: 60;
 }
 
-#myself {
-      align-content: center;
+.myself {
      display: flex;
-     justify-content: space-around;
+     justify-content: space-between;
+     gap: 5em;
 }
-.myimg {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 100px;
-    width: 250px; 
-    height: 250px;
+.myimg { 
+     padding: 0em auto;
+      width:20rem; 
     border-radius: 50%;
+    /* border: 1px solid rebeccapurple; */
   
 }
 .paragraph {
     font-size: 1.6rem;
     padding: 0em;
-    align-content: center;
+    
     color: rgb(0, 0, 0);
-    text-align: center;
+    
     
 
 }
@@ -158,19 +161,15 @@ a:hover{
 .project {
 
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    padding: 20px , 0px;
     margin-top: 20px;
 
 
 }
 .cimg {
     
-    width: 140px;
-    padding: 20px , 0px;
-
-
+    width: 15%;
+    
     
  }
  
@@ -180,17 +179,14 @@ a:hover{
     align-items: center;
     font-family: music;
     letter-spacing: 3px;
-    margin-bottom: 0px;
-    padding: 20px , 0px;
     font-size: 30px;
 
 }
 .ul{
-    text-align: center;
-    list-style-type: none;
-    padding: 20px , 0px;
+   text-decoration: none;
 }
-
+.hobbies li 
+{ text-decoration: none;}
 .svg {
     width: 40px;
     margin-right: 10px;
@@ -243,15 +239,13 @@ a:hover{
      background-color: rgba(242, 8, 63, 0.705);
 }
 .socialicon { 
+    width: 5em;
 
-    width: 50px;
-    padding: 20px , 0px;
 
 
 }
 .socialmedia {
     padding-top: 1rem;
-    padding-bottom: 2.5rem;
     display: flex;
     justify-content: space-evenly;
 }
@@ -269,15 +263,122 @@ a:hover{
 }
 .footerlogo {
     width: 2em;
-    padding: 0em 2em;
+    
 }
 .footerMylogo {
     width: 10em;
     
 }
+.footersocial{
+    display: flex;
+    gap: 2em;
+}
 .footertext{
     text-align: center;
     font-size: 1.2rem;
 }
+@media screen and (max-width:1024px){
+    .header {
+        flex-direction: column;
+        align-items:center ;
+    }
 
-  
+   .Sintro {
+    text-align: center;
+
+   }
+   .myself {
+    flex-direction: column;
+    align-items: center;
+
+}
+   .cimg {
+    
+    width: 20%;
+ }
+ .hobbies {
+    flex-direction: column;
+    align-items:center;
+    gap: 1.5;
+}
+.svg {
+    padding: 1.2em;
+ }
+ 
+}
+@media screen and (max-width:640px) {
+     .nav {
+        flex-direction: column;
+        align-items: center;
+
+     }
+    .menuitem{
+        padding: 1em 0em;
+    }
+    #intro{
+        flex-direction: column;
+
+    }
+    .greet {
+        text-align: center;
+    }
+    #Fname {
+        text-align: center;
+
+    }
+    .Sintro {
+        text-align: center;
+        padding: 0em;
+       }
+   .myself {
+        flex-direction: column;
+        align-items: center;
+
+   }
+   .skillset {
+     flex-direction: column;
+     align-items: center;
+     gap: 1.4em;
+   }
+  .paragraph{
+    margin: 0em 2em;
+     text-align: center;
+  }
+  .project {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cimg{
+       width: 40%;
+  }
+  .socialmedia {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+  }
+.socialicon {
+ width: 4em;
+}
+.hobbies {
+    flex-direction: column;
+    align-items:center;
+    gap: 1.5;
+}
+.svg {
+   padding: 1.2em;
+}
+.footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+.footerlogo {
+    padding: 0em;
+}
+.footersocial {
+    flex-direction: column;
+    align-items: center;
+}
+
+}
