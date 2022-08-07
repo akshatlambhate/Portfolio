@@ -92,7 +92,7 @@ a:hover{
 }
 .watermelon {
     padding: 0em;
-     width: 60;
+     width: 80%;
 }
 
 .myself {
@@ -110,8 +110,9 @@ a:hover{
 .paragraph {
     font-size: 1.6rem;
     padding: 0em;
-    
     color: rgb(0, 0, 0);
+    text-align: justify;
+    margin: 0;
     
     
 
@@ -139,7 +140,6 @@ a:hover{
      text-align: center;
     font-family: music;
     letter-spacing: 0.2em;
-    margin-bottom: 2em;
     padding-top: 2em;
     color: rgb(19, 17, 17);
 }
@@ -151,9 +151,9 @@ a:hover{
 
 .iimg {
     
-   width: 100px;
-   height: 100px;
-   
+   width: 5em;
+   height: 4em;
+
 }
 .iimg:hover {
    width: 120px;
@@ -207,14 +207,14 @@ a:hover{
 }
 .field {
     padding: 10px 30px;
-    margin-bottom: 30px;
+    margin-bottom: 1em;
     border: 3px solid rgb(69, 48, 88);
     border-radius: 6px;
 
 }
 .description {
     padding: 50px 70px;
-    margin-bottom: 30px;
+    margin-bottom: 1.9rem;
     border: 3px solid rgb(69, 48, 88);
     border-radius: 6px;
     
@@ -227,6 +227,9 @@ a:hover{
     font-size: 20px;
     font-weight: 600;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #submitb {
      padding: 20px 30px;
@@ -239,7 +242,7 @@ a:hover{
      background-color: rgba(242, 8, 63, 0.705);
 }
 .socialicon { 
-    width: 5em;
+    width: 3.5em;
 
 
 
@@ -263,7 +266,7 @@ a:hover{
 }
 .footerlogo {
     width: 2em;
-    
+   
 }
 .footerMylogo {
     width: 10em;
@@ -292,6 +295,9 @@ a:hover{
     align-items: center;
 
 }
+.myimg{
+    width: 16em;
+   }
    .cimg {
     
     width: 20%;
@@ -307,16 +313,21 @@ a:hover{
  
 }
 @media screen and (max-width:640px) {
-     .nav {
+    .section {
+        padding: 1em;
+    }
+    .nav {
         flex-direction: column;
         align-items: center;
 
      }
     .menuitem{
-        padding: 1em 0em;
+        padding: 0.6em 0em;
+
     }
     #intro{
         flex-direction: column;
+        align-items: center;
 
     }
     .greet {
@@ -335,14 +346,23 @@ a:hover{
         align-items: center;
 
    }
+   .myimg{
+    width: 14em;
+   }
    .skillset {
      flex-direction: column;
      align-items: center;
      gap: 1.4em;
    }
+   .iimg {
+    width: 4.3em;
+    height: 3em;
+   }
   .paragraph{
     margin: 0em 2em;
-     text-align: center;
+     text-align: justify;
+     font-size: 1.3rem;
+
   }
   .project {
     flex-direction: column;
@@ -352,14 +372,15 @@ a:hover{
        width: 40%;
   }
   .socialmedia {
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2em;
   }
 .socialicon {
- width: 4em;
+ width: 2em;
+
 }
+
 .hobbies {
     flex-direction: column;
     align-items:center;
@@ -377,8 +398,6 @@ a:hover{
     padding: 0em;
 }
 .footersocial {
-    flex-direction: column;
-    align-items: center;
+   display: flex;
 }
-
 }
